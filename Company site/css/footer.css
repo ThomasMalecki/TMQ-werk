@@ -1,0 +1,118 @@
+footer .row_container{
+width: 80%;
+margin:auto;
+}
+.spacer-footer{
+    background-color: var(--color-text);
+    height: 100px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    text-align: center;
+}
+
+footer{
+padding-top:80px;
+color:#f7f7f7;
+min-height:500px;
+background-color: var(--color-text); 
+}
+footer .socialmedia{
+text-align:center;
+padding-top:20px;
+padding-bottom:20px;
+width:100%;
+clear:both;
+}
+footer .socialmedia a{
+font-size:50px;
+color:var(--color-rare);
+padding-left:20px;
+padding-right:20px;
+}
+footer .sitemap{
+text-align:center;
+font-size:15px;
+}
+footer .sitemap a{
+padding-left:5px;
+padding-right:5px;
+color:#f7f7f7;
+text-decoration: none;
+}
+footer .sitemap a:hover{color:var(--color-rare);}
+.aanvragen{
+background-color:var(--color-rare);
+border-radius: 30px;
+text-align:center;
+padding: 7px;
+height: 40px;
+width: 100%;
+border:3px var(--color-rare) solid;
+display:block;
+position:relative;
+transform: translate(-50%, 50%);
+left:50%;
+font-weight: 400;
+}
+.aanvragen:hover{background-color:inherit;}
+footer .copyright{
+padding-top:130px;
+color:#adadad;
+padding-bottom:30px;
+}
+footer .copyright p{font-size:15px;}
+footer .copyright .left{float:left;}
+footer .copyright .right{float:right;}
+footer .row{width:100%;}
+footer .col{
+width:33%;
+float:left;
+min-height:200px;
+}
+footer .col:nth-child(2){
+text-align:center;
+margin-top:50px;
+}
+footer .col:nth-child(3){text-align:right;}
+footer .col h2{
+font-size:17px;
+padding-bottom:5px;
+}
+footer .col h3{
+font-size:20px;
+color:var(--color-rare);
+padding-bottom:5px;
+}
+footer .col a{
+display:block;
+padding-bottom:3px;
+color:#f7f7f7;
+font-size:15px;
+text-decoration:none;
+}
+footer .col a:hover{color:var(--color-rare);}
+@media only screen and (max-width:1000px){
+footer .copyright .left{
+font-size:13px;
+float:none;
+text-align:center;
+padding-bottom:10px;
+}
+footer .copyright .right{
+font-size:13px;
+float:none;
+text-align:center;
+padding-top:10px;
+}
+}
+@media only screen and (max-width:800px){
+footer .col{
+width:100%;
+float:none;
+min-height:200px;
+}
+footer .col:nth-child(2){
+text-align:center;
+margin-top:0px;
+}
+}
