@@ -11,14 +11,13 @@ header{
     justify-content: space-between;
 
 }
-.branding a{
-    color:var(--color-rare);
-    font-weight: bold;
-    font-size: 30px;
-
+.branding img{
+    height: 50px;
 }
 nav ul{
     display: flex;
+    height: 50px;
+    align-items: center;
 }
 nav ul li{
     padding: 0px 15px;
