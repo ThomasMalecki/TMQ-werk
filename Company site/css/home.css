@@ -42,7 +42,12 @@
     animation: M-animate infinite 15s;
     color:black;
 }
-.banner-animation h1:nth-child(3) span::before{
+.banner-animation h1:nth-child(3) span:nth-child(1)::before{
+    content: "";
+    animation: Qletter-animate infinite 15s;
+}
+
+.banner-animation h1:nth-child(3) span:nth-child(2)::before{
     content: "";
     animation: Q-animate infinite 15s;
     color:black;
@@ -91,13 +96,13 @@
 }
 @keyframes Q-animate {
     0% {
-        content: "...";
+        content: "";
     }
     25% {
-        content: "......";
+        content: "";
     }
     35% {
-        content: ".........";
+        content: "";
     }
     60%{
         content: "uality";
@@ -107,6 +112,27 @@
     }
     100% {
         content: "uality";
+    }
+
+}
+@keyframes Qletter-animate {
+    0% {
+        content: "";
+    }
+    25% {
+        content: "";
+    }
+    35% {
+        content: "";
+    }
+    60%{
+        content: "Q";
+    }
+    80% {
+        content: "Q";
+    }
+    100% {
+        content: "Q";
     }
 
 }
@@ -391,8 +417,8 @@
     margin-top: 100px;
     background-color: var(--color-rare-light);
     min-height:800px;
-    color: white;
-    border-radius: 0% 80% 0% 0%;
+    color: var(--color-text-light);
+    border-radius: 0% 80% 2% 10%;
 }
 .keyboard-img{
     position: absolute;
@@ -400,46 +426,105 @@
     left: 70%;
     transform: translateX(-50%);
 }
+.line1{
+    margin-left: 55px;
+    border-bottom: 4px var(--color-secondary) solid; 
+    width: 8%;
+    float: left;
+}
 .marketing-wrapper{
     position: relative;
     overflow: hidden;
 }
 
 .marketing-section .title{
-    color: white;
+    color: var(--color-text-light);
     font-size: 35px;
     text-align: left;
 }
 .marketing-section .marketing-line{
     height: 50px;
-    border-bottom: 4px white solid;
-    border-right: 8px white solid;
-    width: 220px;
+    border-bottom: 4px var(--color-primary) solid;
+    border-right: 8px var(--color-primary) solid;
+    width: 220px;   
 }
 .marketing-section .social-word{
-    color: white;
+    color: var(--color-primary);
     padding-top: 20px;
     padding-left: 5px;
 }
 .marketing-section .social-word-start{
     padding: 25px 5px;
-    border-left: 4px white solid;
+    border-left: 4px var(--color-secondary) solid;
     margin-left: 55px;
 }
+
 .marketing-section .social-word-toepassen{
     padding: 25px 5px;
-    border-left: 4px white solid;
-    margin-left: 155px;
+    border-left: 4px var(--color-secondary) solid;
+    width: 100%;
+    clear: both;
+}
+.marketing-section .social-word-meer{
+    padding: 25px 0 0 5px;
+    border-left: 4px var(--color-secondary) solid;
+    float: left;
 }
 .marketing-section .email-word{
-    color: white;
+    color: var(--color-primary);
     padding-left: 5px;
+    clear: both;
+}
+.marketing-section .email-word-verzamel{
+    margin-left: 30px;
+    padding: 25px 5px;
+    border-left: 4px var(--color-secondary) solid;
 }
 
+.marketing-section .email-word-auto{
+    border-left: 4px var(--color-secondary) solid;
+    float: left;
+    padding-left: 5px;
+}
 .marketing-section .content{
     padding-top: 200px;
 }
 
 .marketing-section .main{
-    border-left: 8px white solid;
+    border-left: 8px var(--color-primary)  solid;
+}
+@media only screen and (max-width: 900px){
+    .keyboard-img{
+        position: absolute;
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .marketing-section .title{
+        font-size: 27px;
+    }
+    .marketing-section .marketing-line{
+        height: 50px;
+        border-bottom: 4px var(--color-primary) solid;
+        border-right: 8px var(--color-primary) solid;
+        width: 130px;   
+    }
+    .marketing-section .social-word-start{
+        margin-left: 10px;
+    }
+    .line1{
+        margin-left: 10px;
+    }
+    .keyboard-img{
+        display: none;
+    }
+    .marketing-section .content h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .marketing-section{
+        border-radius: 0% 40% 2% 10%;
+    }
 }
