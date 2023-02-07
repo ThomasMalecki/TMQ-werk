@@ -247,7 +247,6 @@
 }
 .section-2 .title{
     text-align: left;
-    font-size: 30px;
 }
 .section-2-wrapper{
     height: 100%;
@@ -329,7 +328,6 @@
 }
 .home-garanderen .title{
     padding-bottom: 50px;
-    font-size: 30px;
     font-weight: 600;
 }
 .boxes-wrapper{
@@ -345,7 +343,6 @@
     height:320px;
     margin: 30px;
     width: 300px;
-    transition: border 1s;
     border:var(--color-rare) 3px solid;
     border-bottom-right-radius: 60px;
     border-top-left-radius: 100px;
@@ -378,12 +375,71 @@
     font-size: 18px;
 }
 .home-garanderen .box h3{
-    position: relative;
-    transform: translateY(-50%);
-    top:50%;
     font-size: 30px;
     font-weight: 500;
 }
 .home-garanderen h3{
     text-align:center;
+    color:var(--color-rare);
+    padding: 140px 50px;
+}
+.home-garanderen .more h3:hover{
+    cursor: pointer;
+}
+
+.marketing-section{
+    margin-top: 100px;
+    background-color: var(--color-rare-light);
+    min-height:800px;
+    color: white;
+    border-radius: 0% 80% 0% 0%;
+}
+.keyboard-img{
+    position: absolute;
+    width: 800px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+.marketing-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.marketing-section .title{
+    color: white;
+    font-size: 35px;
+    text-align: left;
+}
+.marketing-section .marketing-line{
+    height: 50px;
+    border-bottom: 4px white solid;
+    border-right: 8px white solid;
+    width: 220px;
+}
+.marketing-section .social-word{
+    color: white;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.marketing-section .social-word-start{
+    padding: 25px 5px;
+    border-left: 4px white solid;
+    margin-left: 55px;
+}
+.marketing-section .social-word-toepassen{
+    padding: 25px 5px;
+    border-left: 4px white solid;
+    margin-left: 155px;
+}
+.marketing-section .email-word{
+    color: white;
+    padding-left: 5px;
+}
+
+.marketing-section .content{
+    padding-top: 200px;
+}
+
+.marketing-section .main{
+    border-left: 8px white solid;
 }

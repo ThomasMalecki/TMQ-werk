@@ -15,6 +15,7 @@ html{
     --color-bg:#fafcff;
     --color-bg-secondary:#8792A1;
     --color-rare:#FEB82C;
+    --color-rare-light:#fdc64e;
     background-color: var(--color-bg);
 }
 ::selection {
@@ -45,5 +46,5 @@ h1, h2, h3, h4, h5, p{
 }
 .title{
     text-align: center;
-
+    font-size: 30px;
 }
